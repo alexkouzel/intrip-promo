@@ -136,7 +136,7 @@ header .yellow-btn {
     margin-bottom: 2rem;
 }
 
-@media screen and (max-width: 100rem) {
+@media screen and (max-width: 80rem) {
     #tech {
         gap: 2rem;
     }
@@ -154,7 +154,7 @@ header .yellow-btn {
     }
 }
 
-@media screen and (max-width: 100rem) {
+@media screen and (max-width: 80rem) {
     .teck-step img {
         max-width: 30rem;
         max-height: 20rem;
@@ -200,7 +200,7 @@ header .yellow-btn {
     width: 30rem;
 }
 
-@media screen and (max-width: 100rem) {
+@media screen and (max-width: 80rem) {
     #team>div {
         flex-direction: column !important;
     }
