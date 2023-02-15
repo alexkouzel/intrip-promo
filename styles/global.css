@@ -1,0 +1,84 @@
+@font-face {
+    font-family: Clash Grotesk;
+    src: url('/fonts/ClashGrotesk-Regular.otf');
+}
+
+@font-face {
+    font-family: Clash Grotesk;
+    font-weight: bold;
+    src: url('/fonts/ClashGrotesk-Bold.otf');
+}
+
+@font-face {
+    font-family: Clash Grotesk;
+    font-weight: 600;
+    src: url('/fonts/ClashGrotesk-Semibold.otf');
+}
+
+@font-face {
+    font-family: Clash Grotesk;
+    font-weight: 500;
+    src: url('/fonts/ClashGrotesk-Medium.otf');
+}
+
+:root {
+    --purple: #773DB0;
+    --green: #3EA495;
+    --yellow: #F6C629;
+    --blue: #5775CD;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 62.5%;
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+    background: white;
+    min-height: 100%;
+    font-size: 2rem;
+}
+
+* {
+    font-family: 'Clash Grotesk', sans-serif !important;
+    color: var(--blue-4);
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+h1 {
+    font-size: 7rem;
+    line-height: 7rem;
+    font-weight: 600;
+    color: var(--purple);
+}
+
+h2 {
+    font-size: 4rem;
+    color: var(--purple);
+}
+
+h3 {
+    font-size: 2.2rem;
+    font-weight: 400;
+    color: var(--purple);
+}
+
+.white-font * {
+    color: white;
+}
+
+.row {
+    display: flex;
+    flex-direction: row !important;
+}
+
+.col {
+    display: flex;
+    flex-direction: column !important;
+}
