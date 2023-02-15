@@ -12,8 +12,8 @@
 }
 
 .block-desc h1 {
-    margin-bottom: 25px;
-    max-width: 500px;
+    margin-bottom: 2.5rem;
+    max-width: 50rem;
 }
 
 .block-img {
@@ -22,7 +22,7 @@
 }
 
 .block-btn {
-    margin-top: 60px;
+    margin-top: 6rem;
     font-size: 2.2rem;
 }
 
@@ -31,21 +31,19 @@
 }
 
 .yellow-btn {
-    border: 2px solid var(--yellow);
+    border: 0.2rem solid var(--yellow);
     background-color: white;
     color: var(--yellow);
     width: fit-content;
-    border-radius: 40px;
+    border-radius: 4rem;
     font-weight: 500;
-    padding: 15px 30px;
+    padding: 1.5rem 3rem;
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
 
 .yellow-btn:hover {
     background-color: var(--yellow);
-    text-shadow: .5px 0px .5px,
-        -.5px 0px .5px;
     color: white;
 }
 
@@ -61,10 +59,10 @@ header {
     align-items: center;
     position: fixed;
     transition: box-shadow 0.3s;
-    height: 90px;
+    height: 9rem;
     width: 100%;
     z-index: 99;
-    right: 20px;
+    right: 2rem;
     left: 0;
 }
 
@@ -75,8 +73,8 @@ header .yellow-btn {
 
 .nav {
     display: flex;
-    margin: 0 0 0 100px;
-    gap: 50px;
+    margin: 0 0 0 10rem;
+    gap: 5rem;
 }
 
 .nav a {
@@ -87,14 +85,12 @@ header .yellow-btn {
 
 .nav a:hover {
     color: var(--yellow);
-    text-shadow: .4px 0px .2px,
-        -.4px 0px .2px;
 }
 
 #landing {
-    height: 780px;
-    margin-top: 90px;
-    gap: 100px;
+    height: 78rem;
+    margin-top: 9rem;
+    gap: 10rem;
 }
 
 /* ===============================
@@ -102,8 +98,8 @@ header .yellow-btn {
    =============================== */
 
 #product {
-    height: 760px;
-    gap: 120px;
+    height: 76rem;
+    gap: 12rem;
 }
 
 
@@ -112,21 +108,21 @@ header .yellow-btn {
    =============================== */
 
 #tech {
-    height: 860px;
+    height: 86rem;
     width: fit-content;
-    padding-bottom: 80px;
+    padding-bottom: 8rem;
     margin: 0 auto;
-    gap: 40px;
+    gap: 4rem;
 }
 
 #tech h1 {
     color: var(--green);
-    margin: 120px 0 auto auto;
+    margin: 12rem 0 auto auto;
 }
 
 #tech>div {
     margin: 0 auto;
-    gap: 30px;
+    gap: 3rem;
 }
 
 .teck-step {
@@ -136,13 +132,13 @@ header .yellow-btn {
 
 .teck-step h3 {
     color: black;
-    max-width: 220px;
-    margin-bottom: 20px;
+    max-width: 22rem;
+    margin-bottom: 2rem;
 }
 
-@media screen and (max-width: 1400px) {
+@media screen and (max-width: 100rem) {
     #tech {
-        gap: 20px;
+        gap: 2rem;
     }
 
     #tech>div {
@@ -158,10 +154,10 @@ header .yellow-btn {
     }
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 100rem) {
     .teck-step img {
-        max-width: 300px;
-        max-height: 200px;
+        max-width: 30rem;
+        max-height: 20rem;
         height: auto !important;
         width: auto !important;
     }
@@ -172,13 +168,13 @@ header .yellow-btn {
    =============================== */
 
 #team {
-    height: 800px;
+    height: 80rem;
     align-items: center;
-    gap: 80px
+    gap: 8rem
 }
 
 #team>div {
-    gap: 100px;
+    gap: 10rem;
 }
 
 .member {
@@ -188,33 +184,33 @@ header .yellow-btn {
 
 .member h2 {
     font-size: 3rem;
-    margin-top: 10px;
+    margin-top: 1rem;
 }
 
 .member h3 {
     color: var(--yellow);
-    margin-bottom: 20px;
+    margin-bottom: 2rem;
 }
 
 .member p {
-    max-width: 350px;
+    max-width: 35rem;
 }
 
 .member img {
-    width: 300px;
+    width: 30rem;
 }
 
-@media screen and (max-width: 1400px) {
+@media screen and (max-width: 100rem) {
     #team>div {
         flex-direction: column !important;
     }
 
     .member p {
-        max-width: 200px;
+        max-width: 20rem;
     }
 
     .member img {
-        width: 200px;
+        width: 20rem;
     }
 }
 
@@ -225,18 +221,18 @@ header .yellow-btn {
 #contact {
     width: fit-content;
     margin: 0 auto;
-    height: 860px;
-    gap: 30px;
+    height: 86rem;
+    gap: 3rem;
 }
 
 #contact>div {
-    gap: 340px;
+    gap: 34rem;
     margin: 0 auto;
 }
 
 #contact h1 {
     color: var(--blue);
-    margin: 60px 0 auto 0;
+    margin: 6rem 0 auto 0;
 }
 
 #contact h2,
@@ -245,33 +241,33 @@ header .yellow-btn {
 }
 
 .info-list {
-    gap: 50px;
+    gap: 5rem;
     text-align: center;
     align-items: center;
 }
 
 .info-intro {
-    max-width: 280px;
+    max-width: 28rem;
     font-size: 2.5rem;
     font-weight: 500;
 }
 
 .info {
-    gap: 15px;
+    gap: 1.5rem;
     text-align: start;
 }
 
 .info>div {
     align-items: center;
-    gap: 10px;
+    gap: 1rem;
 }
 
 .info img {
-    width: 30px;
-    height: 30px;
+    width: 3rem;
+    height: 3rem;
 }
 
-@media screen and (max-width: 1400px) {
+@media screen and (max-width: 80rem) {
     #contact h1 {
         margin: 0;
     }
@@ -286,27 +282,25 @@ header .yellow-btn {
         text-align: center;
     }
 
+    .block {
+        text-align: center;
+        padding: 8rem 2rem;
+        height: fit-content !important;
+    }
+
     .block-img {
         display: none;
     }
 
     .block-btn {
-        margin: 60px auto 0 auto;
-    }
-
-    .block {
-        text-align: center;
-        padding: 80px 20px;
-        height: fit-content !important;
-    }
-}
-
-@media screen and (max-width: 1000px) {
-    .nav {
-        display: none;
+        margin: 6rem auto 0 auto;
     }
 
     .block-desc {
-        max-width: 270px;
+        max-width: 27rem;
+    }
+
+    .nav {
+        display: none;
     }
 }

@@ -1,3 +1,8 @@
+// adapt for smaller laptop screens
+if (screen.width < 1700) {
+    document.querySelector('html').style.fontSize = '50%' 
+}
+
 let scrollEvent;
 document.onscroll = (event) => {
     clearTimeout(scrollEvent);
