@@ -7,24 +7,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/index.css">
     <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
-    <script src="/scripts/global.js"></script>
+    <script src="scripts/global.js"></script>
     <title>Welcome | intrip</title>
 </head>
 
 <body>
 
     <!-- Page header -->
-    <header>
+    <div class="nav">
+        <a href="/#product">Product</a>
+        <a href="/#tech">Technology</a>
+        <a href="/#team">Team</a>
+        <a href="/#contact">Contact</a>
+        <a href="/privacy.html">Privacy policy</a>
+    </div>
+    <div class="row header-left">
         <h2 class="logo" onclick="location.replace('/')">intrip</h2>
-        <div class="nav">
-            <a href="/#product">Product</a>
-            <a href="/#tech">Technology</a>
-            <a href="/#team">Team</a>
-            <a href="/#contact">Contact</a>
-            <a href="/privacy.html">Privacy policy</a>
-        </div>
+    </div>
+    <div class="row header-right">
         <button class="yellow-btn">Download</button>
-    </header>
+        <button class="burger">
+            <input id="burger" class="burger-input" type="checkbox"/>
+            <label for="burger"><span class="burger-icon"></span></label>
+        </button>
+    </div>
 
     <!-- Landing block -->
     <div id="landing" class="block">

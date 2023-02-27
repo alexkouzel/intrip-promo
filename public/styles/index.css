@@ -1,4 +1,5 @@
 @import 'global.css';
+@import 'burger.css';
 
 .purple-bg {
     background-color: var(--purple);
@@ -28,6 +29,7 @@
     border: 0.3rem solid var(--yellow);
     padding: 1.5rem 3rem;
     border-radius: 3rem;
+    height: fit-content;
     font-size: 2rem;
     font-weight: 600;
 }
@@ -77,29 +79,48 @@ header {
     background-color: white;
     align-items: center;
     position: fixed;
-    transition: box-shadow 0.3s;
     height: 9rem;
     width: 100%;
-    z-index: 99;
+    z-index: 2;
 }
 
-header .logo {
-    margin: 0 15rem 0 8rem;
+.logo {
     cursor: pointer;
 }
 
-header .yellow-btn {
-    margin: 0 8rem 0 auto;
+.header-left {
+    position: fixed;
+    align-items: center;
+    z-index: 2;
+    height: 9rem;
+    margin-left: 8rem;
+}
+
+.header-right {
+    position: fixed;
+    align-items: center;
+    z-index: 2;
+    right: 0;
+    height: 9rem;
+    margin-right: 8rem;
 }
 
 .nav {
     display: flex;
+    position: fixed;
+    align-items: center;
+    background-color: white;
+    transition: max-height .2s, box-shadow .2s;
+    overflow: hidden;
+    padding-left: 30rem;
+    min-height: 9rem;
+    width: 100%;
     gap: 5rem;
+    z-index: 2;
 }
 
 .nav a {
-    text-decoration: none;
-    transition: color 0.3s ease;
+    transition: color .3s ease;
     color: var(--purple);
 }
 
@@ -108,16 +129,33 @@ header .yellow-btn {
 }
 
 @media screen and (max-width: 80rem) {
-    .logo {
-        margin: 0 5rem 0 5rem !important;
+    .header-left {
+        margin-left: 4rem;
     }
 
-    header .yellow-btn {
-        margin: 0 5rem 0 auto;
+    .header-right {
+        margin-right: 1rem;
+    }
+
+    .burger {
+        display: inline;
     }
 
     .nav {
-        display: none;
+        flex-direction: column;
+        max-height: 9rem;
+        z-index: 1;
+        padding: 0;
+        right: 0;
+        left: 0;
+    }
+
+    .nav a:first-child {
+        padding-top: 10rem;
+    }
+
+    .nav a:last-child {
+        padding-bottom: 10rem;
     }
 }
 
@@ -176,7 +214,7 @@ header .yellow-btn {
 
     .tech-cards {
         flex-direction: column !important;
-        gap: 6rem;
+        gap: 5rem;
     }
 
     .tech-card {
@@ -191,8 +229,12 @@ header .yellow-btn {
 }
 
 @media screen and (max-width: 35rem) {
+    #tech>div {
+        margin: 0
+    }
+
     .tech-card {
-        width: 30rem;
+        width: 100% !important;
     }
 }
 
@@ -202,7 +244,10 @@ header .yellow-btn {
 
 #team {
     align-items: center;
-    gap: 6rem;
+}
+
+#team h1 {
+    padding-bottom: 5rem;
 }
 
 #team>div {
@@ -233,20 +278,21 @@ header .yellow-btn {
 }
 
 @media screen and (max-width: 80rem) {
-    #team {
-        gap: 4rem;
-    }
-
     #team>div {
         flex-direction: column !important;
+        gap: 5rem;
+    }
+
+    #team h1 {
+        padding-bottom: 0;
     }
 
     .member {
-        max-width: 20rem;
+        max-width: 25rem;
     }
 
     .member img {
-        width: 20rem;
+        width: 25rem;
     }
 }
 
@@ -258,13 +304,13 @@ header .yellow-btn {
     margin: 0 auto;
 }
 
+#contact h1 {
+    margin: 10rem 0 5rem auto;
+}
+
 #contact>div {
     gap: 30rem;
     margin-top: auto;
-}
-
-#contact h1 {
-    margin: 8rem 0 0 auto;
 }
 
 #contact h2,
@@ -276,7 +322,7 @@ header .yellow-btn {
 .info-list {
     gap: 5rem;
     text-align: center;
-    margin: 10rem 3rem 0 0;
+    margin: 5rem 3.5rem 0 0;
 }
 
 /* text before .info */
@@ -304,7 +350,7 @@ header .yellow-btn {
 
 @media screen and (max-width: 80rem) {
     #contact h1 {
-        margin: 0;
+        margin: 0 0 5rem 0;
     }
 
     .info {
@@ -323,6 +369,6 @@ header .yellow-btn {
     }
 
     .info-list {
-        margin: 10rem 0 0 0;
+        margin: 0;
     }
 }
