@@ -55,12 +55,11 @@ h1 {
     font-size: 7rem;
     line-height: 7rem;
     font-weight: 600;
-    margin-bottom: 4rem;
     color: var(--purple);
 }
 
 h2 {
-    font-size: 4.2rem;
+    font-size: 4rem;
     color: var(--purple);
 }
 
@@ -70,13 +69,8 @@ h3 {
     color: var(--purple);
 }
 
-a {
-    text-decoration: none;
-    font-weight: 500;
-}
-
-button {
-    cursor: pointer !important;
+.white-font * {
+    color: white;
 }
 
 .row {
@@ -87,19 +81,4 @@ button {
 .col {
     display: flex;
     flex-direction: column !important;
-}
-
-.white-font * {
-    color: white;
-}
-
-@media screen and (max-width: 80rem) {
-    h1 {
-        font-size: 4rem;
-        line-height: 4rem;
-    }
-
-    h2 {
-        font-size: 3rem;
-    }
 }

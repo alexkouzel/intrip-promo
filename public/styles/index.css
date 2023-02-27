@@ -1,0 +1,306 @@
+@import 'global.css';
+
+.block {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    width: 100%;
+}
+
+.block-desc {
+    margin: auto 0;
+}
+
+.block-desc h1 {
+    margin-bottom: 2.5rem;
+    max-width: 50rem;
+}
+
+.block-img {
+    margin-top: auto;
+    width: min-content;
+}
+
+.block-btn {
+    margin-top: 6rem;
+    font-size: 2.2rem;
+}
+
+.purple-bg {
+    background-color: var(--purple);
+}
+
+.yellow-btn {
+    border: 0.2rem solid var(--yellow);
+    background-color: white;
+    color: var(--yellow);
+    width: fit-content;
+    border-radius: 4rem;
+    font-weight: 500;
+    padding: 1.5rem 3rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.yellow-btn:hover {
+    background-color: var(--yellow);
+    color: white;
+}
+
+/* ===============================
+            LANDING BLOCK
+   =============================== */
+
+header {
+    display: flex;
+    position: relative;
+    background-color: white;
+    padding-left: 10%;
+    align-items: center;
+    position: fixed;
+    transition: box-shadow 0.3s;
+    height: 9rem;
+    width: 100%;
+    z-index: 99;
+    right: 2rem;
+    left: 0;
+}
+
+header .yellow-btn {
+    position: absolute;
+    right: 20%;
+}
+
+.nav {
+    display: flex;
+    margin: 0 0 0 10rem;
+    gap: 5rem;
+}
+
+.nav a {
+    text-decoration: none;
+    color: var(--purple);
+    transition: color 0.3s ease;
+}
+
+.nav a:hover {
+    color: var(--yellow);
+}
+
+#landing {
+    height: 78rem;
+    margin-top: 9rem;
+    gap: 10rem;
+}
+
+/* ===============================
+            PRODUCT BLOCK
+   =============================== */
+
+#product {
+    height: 76rem;
+    gap: 12rem;
+}
+
+
+/* ===============================
+           TECHNOLOGY BLOCK
+   =============================== */
+
+#tech {
+    height: 86rem;
+    width: fit-content;
+    padding-bottom: 8rem;
+    margin: 0 auto;
+    gap: 4rem;
+}
+
+#tech h1 {
+    color: var(--green);
+    margin: 12rem 0 auto auto;
+}
+
+#tech>div {
+    margin: 0 auto;
+    gap: 3rem;
+}
+
+.teck-step {
+    align-items: center;
+    text-align: center;
+}
+
+.teck-step h3 {
+    color: black;
+    max-width: 22rem;
+    margin-bottom: 2rem;
+}
+
+@media screen and (max-width: 80rem) {
+    #tech {
+        gap: 2rem;
+    }
+
+    #tech>div {
+        flex-direction: column !important;
+    }
+
+    #tech h1 {
+        margin-left: 0;
+    }
+
+    .teck-step {
+        margin: 0 !important;
+    }
+}
+
+@media screen and (max-width: 80rem) {
+    .teck-step img {
+        max-width: 30rem;
+        max-height: 20rem;
+        height: auto !important;
+        width: auto !important;
+    }
+}
+
+/* ===============================
+              TEAM BLOCK
+   =============================== */
+
+#team {
+    height: 80rem;
+    align-items: center;
+    gap: 8rem
+}
+
+#team>div {
+    gap: 10rem;
+}
+
+.member {
+    align-items: center;
+    text-align: center;
+}
+
+.member h2 {
+    font-size: 3rem;
+    margin-top: 1rem;
+}
+
+.member h3 {
+    color: var(--yellow);
+    margin-bottom: 2rem;
+}
+
+.member p {
+    max-width: 35rem;
+}
+
+.member img {
+    width: 30rem;
+}
+
+@media screen and (max-width: 80rem) {
+    #team>div {
+        flex-direction: column !important;
+    }
+
+    .member p {
+        max-width: 20rem;
+    }
+
+    .member img {
+        width: 20rem;
+    }
+}
+
+/* ===============================
+            CONTACT BLOCK
+   =============================== */
+
+#contact {
+    width: fit-content;
+    margin: 0 auto;
+    height: 86rem;
+    gap: 3rem;
+}
+
+#contact>div {
+    gap: 34rem;
+    margin: 0 auto;
+}
+
+#contact h1 {
+    color: var(--blue);
+    margin: 6rem 0 auto 0;
+}
+
+#contact h2,
+#contact h3 {
+    color: black;
+}
+
+.info-list {
+    gap: 5rem;
+    text-align: center;
+    align-items: center;
+}
+
+.info-intro {
+    max-width: 28rem;
+    font-size: 2.5rem;
+    font-weight: 500;
+}
+
+.info {
+    gap: 1.5rem;
+    text-align: start;
+}
+
+.info>div {
+    align-items: center;
+    gap: 1rem;
+}
+
+.info img {
+    width: 3rem;
+    height: 3rem;
+}
+
+@media screen and (max-width: 80rem) {
+    #contact h1 {
+        margin: 0;
+    }
+
+    h1 {
+        font-size: 4rem;
+        line-height: 4rem;
+    }
+
+    .info {
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .block {
+        text-align: center;
+        padding: 8rem 2rem;
+        height: fit-content !important;
+    }
+
+    .block-img {
+        display: none;
+    }
+
+    .block-btn {
+        margin: 6rem auto 0 auto;
+    }
+
+    .block-desc {
+        max-width: 27rem;
+    }
+
+    .nav {
+        display: none;
+    }
+}
