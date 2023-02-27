@@ -6,30 +6,32 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/index.css">
-    <script src="index.js"></script>
-    <title>Intrip</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <script src="/scripts/global.js"></script>
+    <title>Welcome | intrip</title>
 </head>
 
 <body>
 
     <!-- Page header -->
     <header>
-        <h2 class="logo">intrip</h2>
+        <h2 class="logo" onclick="location.replace('/')">intrip</h2>
         <div class="nav">
-            <a href="#product">Product</a>
-            <a href="#tech">Technology</a>
-            <a href="#team">Team</a>
-            <a href="#contact">Contact</a>
+            <a href="/#product">Product</a>
+            <a href="/#tech">Technology</a>
+            <a href="/#team">Team</a>
+            <a href="/#contact">Contact</a>
+            <a href="/privacy.html">Privacy policy</a>
         </div>
-        <div class="yellow-btn">Download</div>
+        <button class="yellow-btn">Download</button>
     </header>
 
     <!-- Landing block -->
     <div id="landing" class="block">
         <div class="block-desc">
-            <h1>Let us do your <span style="color: var(--yellow)">trip</span> planning</h1>
-            <h3 style="max-width: 50rem">intrip is a search-engine that helps you to find places that YOU want to visit</h3>
-            <!-- <div class="yellow-btn block-btn">Get started</div> -->
+            <h1>Let us do <span style="color: var(--yellow)">your</span> trip planning</h1>
+            <h3 style="max-width: 50rem">intrip is a search-engine that helps you to find places that YOU want to visit
+            </h3>
         </div>
         <img class="block-img" style="height: 60rem" src="images/traveller.svg" alt="Traveller">
     </div>
@@ -49,19 +51,24 @@
 
     <!-- Tech block -->
     <div id="tech" class="block col">
-        <h1>Technology</h1>
-        <div class="row">
-            <div class="col teck-step">
-                <h3>You give us your instagram nickname</h3>
-                <img style="height: 48rem; margin-top: auto;" src="images/instagram.png" alt="Instagram">
-            </div>
-            <div class="col teck-step">
-                <h3>We analyse your feed posts and highlights</h3>
-                <img style="height: 42rem; margin-top: auto" src="images/analyze.png" alt="Image recognition">
-            </div>
-            <div class="col teck-step" style="margin-left: 8rem">
-                <h3>Create user profile with his interests to suggest best locations</h3>
-                <img style="width: 21rem; margin-top: auto" src="images/interests.png" alt="User interests">
+        <div class="col">
+            <h1>Technology</h1>
+            <div class="tech-cards">
+                <div class="col tech-card">
+                    <h2>Step 1</h2>
+                    <h3>You give us your instagram nickname</h3>
+                    <img src="images/instagram.png" alt="Instagram">
+                </div>
+                <div class="col tech-card">
+                    <h2>Step 2</h2>
+                    <h3>We analyse your feed posts and highlights</h3>
+                    <img src="images/analyze.png" alt="Image recognition">
+                </div>
+                <div class="col tech-card">
+                    <h2>Step 3</h2>
+                    <h3>Create user profile to suggest best locations</h3>
+                    <img src="images/interests.png" alt="User interests">
+                </div>
             </div>
         </div>
     </div>
