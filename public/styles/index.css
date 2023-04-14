@@ -27,6 +27,16 @@
     height: 60rem;
 }
 
+.download {
+    display: flex;
+    gap: 2rem;
+}
+
+.download img {
+    width: 15rem;
+}
+
+
 #landing {
     gap: 10rem;
 }
@@ -35,26 +45,62 @@
     gap: 15rem;
 }
 
-@media screen and (max-width: 80rem) {
-    .hero {
-        min-height: 30rem;
-    }
+#traveller {
+    height: 65rem;
+}
 
+#binoculars {
+    height: 68rem;
+}
+
+#thumbnail {
+    height: 75rem
+}
+
+@media screen and (max-width: 80rem) {
     .hero {
         text-align: center;
         padding: 12rem 2rem;
+        min-height: 30rem;
     }
 
     .hero-img {
-        display: none;
+        position: absolute;
+        bottom: 1.5rem;
     }
 
     .hero-desc {
-        max-width: 30rem;
+        max-width: 34rem;
     }
 
     .hero-title {
         margin-top: -5rem;
+    }
+
+    .download {
+        justify-content: center;
+    }
+
+    .download img {
+        width: 13rem;
+    }
+
+    #landing {
+        min-height: 35rem;
+    }
+
+    #traveller {
+        height: 15rem;
+        right: 2rem;
+    }
+
+    #binoculars {
+        height: 15rem;
+        left: 2rem;
+    }
+
+    #thumbnail {
+        display: none;
     }
 }
 
@@ -69,7 +115,7 @@ header {
     position: fixed;
     height: 9rem;
     width: 100%;
-    z-index: 2;
+    z-index: 999;
 }
 
 .logo {
@@ -79,24 +125,23 @@ header {
 .header-left {
     position: fixed;
     align-items: center;
-    z-index: 2;
     height: 9rem;
     margin-left: 8rem;
+    z-index: 999;
 }
 
 .header-right {
     position: fixed;
     align-items: center;
-    z-index: 2;
-    right: 0;
-    height: 9rem;
     margin-right: 8rem;
+    height: 9rem;
+    right: 0;
+    z-index: 999;
 }
 
 .nav {
     display: flex;
     position: fixed;
-    z-index: 2;
     align-items: center;
     background-color: white;
     transition: max-height .2s, box-shadow .2s;
@@ -105,6 +150,7 @@ header {
     min-height: 9rem;
     width: 100%;
     gap: 5rem;
+    z-index: 999;
 }
 
 .nav a {
@@ -311,15 +357,6 @@ header {
     color: black;
 }
 
-.download {
-    display: flex;
-    gap: 2rem;
-}
-
-.download img {
-    width: 15rem;
-}
-
 /* contact us information */
 .info-list {
     gap: 5rem;
@@ -377,10 +414,6 @@ header {
     .info-list {
         margin: 0;
     }
-
-    .download img {
-        width: 13rem;
-    }
 }
 
 /* ========================
@@ -390,7 +423,7 @@ header {
 footer {
     display: flex;
     background-color: var(--purple);
-    padding: 5rem 0;
+    padding: 7rem 0;
     color: white;
     justify-content: center;
     gap: 3rem;

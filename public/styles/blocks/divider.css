@@ -7,6 +7,7 @@
     line-height: 0;
     transform: rotate(180deg);
     margin-bottom: -1px !important;
+    z-index: 1;
 }
 
 .waves svg {

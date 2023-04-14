@@ -51,11 +51,11 @@ a {
 
 @media screen and (max-width: 80rem) {
     h1 {
-        font-size: 4rem;
-        line-height: 4rem;
+        font-size: 5rem;
+        line-height: 5rem;
     }
 
     h2 {
-        font-size: 3rem;
+        font-size: 4rem;
     }
 }
