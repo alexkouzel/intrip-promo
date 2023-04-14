@@ -1,0 +1,10 @@
+@import "base/reset.css";
+@import "base/text.css";
+@import "base/buttons.css";
+@import "base/common.css";
+
+:root {
+    --purple: #773DB0;
+    --yellow: #F6C629;
+    --blue: #5775CD
+}

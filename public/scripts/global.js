@@ -18,9 +18,16 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // handle burger menu for mobile
     this.querySelector('.burger').onclick = function () {
-        let burger = document.querySelector('.burger-input');
-        let nav = document.querySelector('.nav');
+        let body = document.querySelector('body');
+        let burger = body.querySelector('.burger-input');
+        let nav = body.querySelector('.nav');
         nav.style.maxHeight = burger.checked ? '9rem' : '45rem';
         burger.checked = !burger.checked;
+
+        if (burger.checked) {
+            body.classList.add('stop-scroll');
+        } else {
+            body.classList.remove('stop-scroll');
+        }
     };
 });

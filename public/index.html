@@ -15,6 +15,7 @@
 
     <!-- Page header -->
     <div class="nav">
+        <a></a>
         <a href="/#product">Product</a>
         <a href="/#tech">Technology</a>
         <a href="/#team">Team</a>
@@ -25,37 +26,35 @@
         <h2 class="logo" onclick="location.replace('/')">intrip</h2>
     </div>
     <div class="row header-right">
-        <button class="yellow-btn">Download</button>
         <button class="burger">
-            <input id="burger" class="burger-input" type="checkbox"/>
+            <input id="burger" class="burger-input" type="checkbox" />
             <label for="burger"><span class="burger-icon"></span></label>
         </button>
     </div>
 
-    <!-- Landing block -->
-    <div id="landing" class="block">
-        <div class="block-desc">
+    <!-- Landing hero -->
+    <div id="landing" class="hero">
+        <div class="hero-desc">
             <h1>Let us do <span style="color: var(--yellow)">your</span> trip planning</h1>
-            <h3 style="max-width: 50rem">intrip is a search engine that allows users to find desired locations to travel based on their social media.</h3>
+            <h3 style="max-width: 50rem">intrip is a search engine that allows users to find desired locations to travel
+                based on their social media.</h3>
         </div>
-        <img class="block-img" style="height: 60rem" src="images/people/traveller.svg" alt="Traveller">
+        <img class="hero-img" style="height: 60rem" src="images/people/traveller.png" alt="Traveller">
     </div>
 
-    <!-- Product block -->
-    <div id="product" class="block purple-bg row">
-        <img class="block-img" style="height: 65rem" src="images/thumbnail.png" alt="Intrip">
-        <div class="col white-font block-desc">
-            <h1 class="block-title">Product</h1>
-            <h3 style="max-width: 45rem">Intrip is an app that suggests places to visit depending
-                on your interests by analyzing posts on social networks.
-                If you post more mountains, we will recommend fewer
-                nightclubs but more hiking places.</h3>
-            <!-- <div class="yellow-btn block-btn">Get started</div> -->
+    <!-- Product hero -->
+    <div id="product" class="hero purple-bg row">
+        <img class="hero-img" style="height: 65rem" src="images/thumbnail.png" alt="Intrip">
+        <div class="col white-font hero-desc">
+            <h1 class="hero-title">What is intrip?</h1>
+            <h3 style="max-width: 45rem">Intrip is an app that suggests places to visit depending on your interests by
+                analyzing instagram posts. If you post more mountains, we will recommend fewer nightclubs but more
+                hiking places.</h3>
         </div>
     </div>
 
-    <!-- Tech block -->
-    <div id="tech" class="block col">
+    <!-- Tech hero -->
+    <div id="tech" class="hero col">
         <div class="col">
             <h1>Technology</h1>
             <div class="tech-cards">
@@ -78,8 +77,8 @@
         </div>
     </div>
 
-    <!-- Team block -->
-    <div id="team" class="block purple-bg white-font col">
+    <!-- Team hero -->
+    <div id="team" class="hero purple-bg white-font col">
         <h1>Team</h1>
         <div class="row">
             <div class="member">
@@ -106,14 +105,15 @@
         </div>
     </div>
 
-    <!-- Contact block -->
-    <div id="contact" class="block col">
+    <!-- Contact hero -->
+    <div id="contact" class="hero col">
         <h1>Contact us</h1>
         <div class="row">
-            <img style="height: 68rem" class="block-img" src="images/people/binoculars.svg" alt="Binoculars">
+            <img style="height: 68rem" class="hero-img" src="images/people/binoculars.png" alt="Binoculars">
             <div class="col info-list">
-                <h3 class="info-intro">We are <span style="color: var(--blue)">open</span>
-                    for any type of collaborations!</h3>
+                <h3 class="info-intro">Do you want to help us with
+                    <span style="color: var(--blue)">testing</span> the mobile app?
+                </h3>
                 <div class="col info">
                     <div class="row">
                         <img src="images/icons/location.png" alt="Location">
@@ -128,10 +128,36 @@
                     </div>
                     <h3>intrip.startup@gmail.com</h3>
                 </div>
+                <div class="download">
+                    <img src="images/soon-google-play.png" alt="soon google play">
+                    <img src="images/soon-app-store.png" alt="soon app store">
+                </div>
             </div>
         </div>
     </div>
 
+    <!-- Footer -->
+    <footer>
+        <p>If you want to participate in alfa testing of the app, leave us your email and we will contact you</p>
+        <label for="email"></label>
+        <input class="input-field" id="email" type="text">
+        <button class="main-btn blue-btn" id="participate-btn">Participate</button>
+    </footer>
+
 </body>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        var button = document.getElementById("participate-btn");
+        button.onclick = function() {
+            var email = document.getElementById("email").value;
+            if (email == "") {
+                alert("Please enter your email");
+            } else {
+                alert("Thank you for your interest! We will contact you soon");
+            }
+        }
+    });
+</script>
 
 </html>

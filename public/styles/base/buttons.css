@@ -1,0 +1,29 @@
+button {
+    cursor: pointer !important;
+}
+
+.main-btn {
+    transition: background-color 0.3s ease;
+    padding: 1.5rem 3rem;
+    height: fit-content;
+    font-size: 2rem;
+    font-weight: 600;   
+}
+
+.yellow-btn {
+    background-color: white;
+    border-radius: 3rem;
+    border: 0.3rem solid var(--yellow);
+    color: var(--yellow);
+}
+
+.yellow-btn:hover {
+    background-color: var(--yellow);
+    color: white;
+}
+
+.blue-btn {
+    background-color: var(--blue);
+    border-radius: 1rem;
+    color: white;
+}

@@ -1,0 +1,22 @@
+html {
+    scroll-behavior: smooth;
+    font-size: 62.5%;
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+    background: white;
+    min-height: 100%;
+    font-size: 2rem;
+}
+
+* {
+    font-family: 'Clash Grotesk', sans-serif !important;
+    color: var(--blue-4);
+    border: none;
+    padding: 0;
+    margin: 0;
+}

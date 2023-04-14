@@ -1,0 +1,20 @@
+.row {
+    display: flex;
+    flex-direction: row !important;
+}
+
+.col {
+    display: flex;
+    flex-direction: column !important;
+}
+
+.white-font * {
+    color: white;
+}
+
+.input-field {
+    color: black;
+    padding: 1.5rem 3rem;
+    border-radius: 1rem;
+    font-size: 2rem;
+}
