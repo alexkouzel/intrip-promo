@@ -1,0 +1,26 @@
+.waves {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+    margin-bottom: -1px !important;
+}
+
+.waves svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 49px;
+    transform: rotateY(180deg);
+}
+
+.svg-white .shape-fill {
+    fill: #FFFFFF;
+}
+
+.svg-purple .shape-fill {
+    fill: var(--purple);
+}
