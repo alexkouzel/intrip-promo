@@ -14,8 +14,6 @@ body {
 }
 
 * {
-    font-family: 'Clash Grotesk', sans-serif !important;
-    color: var(--blue-4);
     border: none;
     padding: 0;
     margin: 0;

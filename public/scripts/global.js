@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // handle header shadowing on scroll
     let scrollEvent;
-    document.onscroll = (event) => {
+    document.onscroll = () => {
         clearTimeout(scrollEvent);
         scrollEvent = setTimeout(() => {
             let nav = document.querySelector('.nav');

@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="styles/index.css">
     <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
     <script src="scripts/global.js"></script>
+    <script src="scripts/index.js"></script>
     <title>Welcome | intrip</title>
 </head>
 
@@ -36,15 +37,17 @@
     <div id="landing" class="hero">
         <div class="hero-desc">
             <h1>Let us do <span style="color: var(--yellow)">your</span> trip planning</h1>
-            <h3 style="max-width: 50rem">intrip is a search engine that allows users to find desired locations to travel
-                based on their social media.</h3>
+            <div class="download">
+                <img src="images/soon-google-play.png" alt="soon google play">
+                <img src="images/soon-app-store.png" alt="soon app store">
+            </div>
         </div>
-        <img class="hero-img" style="height: 60rem" src="images/people/traveller.png" alt="Traveller">
+        <img class="hero-img" style="height: 65rem" src="images/people/traveller.png" alt="Traveller">
     </div>
 
     <!-- Product hero -->
     <div id="product" class="hero purple-bg row">
-        <img class="hero-img" style="height: 65rem" src="images/thumbnail.png" alt="Intrip">
+        <img class="hero-img" style="height: 75rem" src="images/thumbnail.png" alt="Intrip">
         <div class="col white-font hero-desc">
             <h1 class="hero-title">What is intrip?</h1>
             <h3 style="max-width: 45rem">Intrip is an app that suggests places to visit depending on your interests by
@@ -145,19 +148,5 @@
     </footer>
 
 </body>
-
-<script>
-    document.addEventListener('DOMContentLoaded', function () {
-        var button = document.getElementById("participate-btn");
-        button.onclick = function() {
-            var email = document.getElementById("email").value;
-            if (email == "") {
-                alert("Please enter your email");
-            } else {
-                alert("Thank you for your interest! We will contact you soon");
-            }
-        }
-    });
-</script>
 
 </html>
